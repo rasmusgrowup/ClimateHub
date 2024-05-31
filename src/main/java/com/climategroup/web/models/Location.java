@@ -1,20 +1,26 @@
 package com.climategroup.web.models;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import java.util.List;
+
+@Data
+@Builder
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
 public class Location {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String name;
-    private Double latitude;
-    private Double longitude;
-    private String region;
     private String country;
 
-//    @OneToMany(mappedBy = "location")
-//    private List<ClimateData> climateData;
+    @OneToMany(mappedBy = "location")
+    private List<WeatherData> weatherData;
 }
 

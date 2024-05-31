@@ -9,5 +9,4 @@ public class GeoResponse {
     private String name;
     private double lat;
     private double lon;
-    // Getters and setters
 }

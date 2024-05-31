@@ -5,8 +5,10 @@ import lombok.Data;
 
 @Data
 @Builder
-public class LocationDto {
-    private Long id;
-    private String name;
+public class SysDto {
+    private int type;
+    private int id;
     private String country;
+    private long sunrise;
+    private long sunset;
 }

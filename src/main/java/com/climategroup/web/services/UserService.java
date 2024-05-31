@@ -1,7 +1,6 @@
 package com.climategroup.web.services;
 
 import com.climategroup.web.dtos.UserDto;
-import com.climategroup.web.models.User;
 
 import java.util.List;
 import java.util.Optional;
